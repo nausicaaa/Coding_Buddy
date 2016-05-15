@@ -59,4 +59,8 @@ INSTALLED_APPS += ('django_extensions', )
 # ------------------------------------------------------------------------------
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
+SHELL_PLUS_POST_IMPORTS = (
+    ('Coding_Buddy.users.tests.factories', ('UserFactory', )),
+)
+
 # Your local stuff: Below this line define 3rd party library settings
